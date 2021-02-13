@@ -9,6 +9,7 @@ namespace EntityFrameworkSQLite
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().CreateDatabase<OrderDbContext>().Run();
+            CreateWebHostBuilder(args).Build().CreateDatabase<ArticleDbContext>().Run();
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
